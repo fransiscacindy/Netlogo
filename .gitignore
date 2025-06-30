@@ -1,0 +1,6 @@
+**/__pycache__
+/.idea/**
+netlogo.state
+/.vscode/**
+/result/**
+/data/input/assign_order.csv
