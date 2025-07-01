@@ -331,8 +331,8 @@ def assign_items_to_pods(pods, items, items_pods_class_conf, dev_mode=False):
                                                                                         "item_pod_inventory_level",
                                                                                         "item_warehouse_inventory_level"]
                                                                                         ].copy(), how='inner', on='item_code')
-    items_slots_configuration_selected["item_slot_needed"] = np.ceil(
-        (items_slots_configuration_selected["item_initial_quantity_inventory"] / items_slots_configuration_selected["number_of_item_in_a_box"]) / items_slots_configuration_selected["max_box_in_slot"]).astype(int)
+    #items_slots_configuration_selected["item_slot_needed"] = np.ceil(
+       #(items_slots_configuration_selected["item_initial_quantity_inventory"] / items_slots_configuration_selected["number_of_item_in_a_box"]) / items_slots_configuration_selected["max_box_in_slot"]).astype(int)
 
     # assign item to the pod based on the slot volume
     for s in range(len(slot_volumes)):
